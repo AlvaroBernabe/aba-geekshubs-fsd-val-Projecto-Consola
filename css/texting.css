@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(59, 164, 155);
+    border: 0px;
+}
+
+#cruceta {
+    background-color: black;
+    display: flex;
+    height: 20vh;
+    width: 20vw;   
+    size: 20px;
+    color: blue;
+}
