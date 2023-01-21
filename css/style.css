@@ -2,11 +2,12 @@ body {
     background-color: white;
     margin: 0px;
 }
+/* Estructura básica de la consola */
 .container {
     background-color: rgb(252, 142, 142);
     display: grid;
     height: 100vh;
-    grid-template-columns: 3fr 3fr 4fr 3fr 3fr;
+    grid-template-columns: 4fr 4fr 5fr 4fr 4fr;
     grid-template-rows: 1fr 7fr 1fr 3fr 4fr 1fr;
 }
 .superior {
@@ -28,5 +29,22 @@ body {
     border-radius: 7%;
     grid-column: 3 / 4;
     grid-row: 4 / 6;
+}
+    /* Fin estructura básica de la consola */
 
+    /* Parte superior de la consola */
+.superior-superior {
+    background-color: pink;
+    height: 12%;
+    display:flex;
+}
+.superior-medio {
+    background-color: blueviolet;
+    height: 76%;
+    display: flex;
+}
+.superior-abajo {
+    background-color: pink;
+    height: 12%;
+    display: flex;
 }
