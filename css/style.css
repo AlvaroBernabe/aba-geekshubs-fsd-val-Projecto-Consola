@@ -40,7 +40,6 @@ body {
     
 }
 .superior-medio {
-
     height: 76%;
     display: flex;
 }
@@ -174,24 +173,86 @@ body {
     bottom: -2vw;
 }
 .boton-a {
+    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
     height: 40px;
     width: 40px;
     box-sizing: border-box;
     border-radius: 100%;
-    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
     position: absolute;
     top: 8px;
     right: 9px;
     text-align: center;
 }
 .boton-b {
+    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
     height: 40px;
     width: 40px;
     box-sizing: border-box;
     border-radius: 100%;
-    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
     position: absolute;
     top: 10px;
     left: 8px;
     text-align: center;
+}
+    /* Fin botones a+b */
+    /* Botones Start + Select */
+
+.boton-start {
+    background-color: rgb(71, 141, 53);
+    height: 2.1vw;
+    width: 2.1vw;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 36%;
+    margin-top: -13%;
+    z-index: 3;
+}
+.boton-select {
+    background-color: rgb(71, 141, 53);
+    height: 2.1vw;
+    width: 2.1vw;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 52%;
+    margin-top: -8.8%;
+}
+#select {
+    margin-top: -200%;
+    margin-left: -20%;
+    font-size: medium;
+}
+#start {
+    margin-top: -200%;
+    margin-left: 20%;
+    font-size: medium;
+}
+
+.boton-start-sombra {
+    height: 50px;
+    width: 50px;
+    background: rgb(23, 17, 117);
+    border-radius: 72px;
+    transform: rotate(-15deg);
+    border-left: 20px;
+    position: fixed;
+    left: 854px;
+    bottom: 60px;
+    opacity: 50%;
+}
+.boton-select-sombra {
+    height: 50px;
+    width: 50px;
+    background: rgb(23, 17, 117);
+    border-radius: 100%;
+    transform: rotate(-15deg);
+    border-left: 20px;
+    position: fixed;
+    left: 789px;
+    bottom: 60px;
+    z-index: 2;
+    opacity: 50%;
 }
