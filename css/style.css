@@ -2,7 +2,7 @@ body {
     background-color: white;
     margin: 0px;
 }
-/* Estructura básica de la consola */
+    /* Estructura básica de la consola */
 .container {
     background-color: rgb(252, 142, 142);
     display: grid;
@@ -11,14 +11,14 @@ body {
     grid-template-rows: 1fr 7fr 1fr 3fr 4fr 1fr;
 }
 .superior {
-    background-color: rgb(38, 38, 163);
-    border-radius: 7%;
+    background-color: rgb(110, 111, 112);
+    border-radius: 9%;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
 .bisagras {
     background-color: green;
-    border-radius: 25%;
+    border-radius: 20% 20% 0% 0%;
     grid-column: 3 / 4;
     grid-row: 3 / 5;
     height: 25%;
@@ -26,7 +26,7 @@ body {
 }
 .inferior {
     background-color: red;
-    border-radius: 7%;
+    border-radius: 0% 0% 7% 7%;
     grid-column: 3 / 4;
     grid-row: 4 / 6;
 }
@@ -49,7 +49,8 @@ body {
     display: flex;
     justify-content: center;
 }
-    /* Fin estructura de la consola */
+    /* Fin parte superior de la consola */
+    /* Protectores,logo y marcos superiores */
 .superior-superior-marco {
     display: flex;
     width: 85%;
@@ -64,8 +65,8 @@ body {
 }
 .pro-medio {
     background-color: black;
-    height: 1.6vw;
-    width: 1.6vw;
+    height: 1.5vw;
+    width: 1.5vw;
     border-radius: 100%;
 }
 .pantalla {
@@ -98,4 +99,17 @@ body {
     width: 90%;
     justify-content: space-between;
     align-items: center;
+}
+    /* Hasta aqui la parte superior */
+.inferior-superior {
+    background-color: aqua;
+    height: 19%;
+}
+.inferior-medio {
+    background-color: rgb(38, 0, 255);
+    height:38%;
+}
+.inferior-abajo {
+    background-color: aqua;
+    height: 43%;
 }
