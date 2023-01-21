@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projecto Consola</title>
+    <title>Projecto Consola Game Boy Advance SP</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Consola Completa -->
     <div class="container">
-        <div class="superior"></div>
+        <!-- Parte superior de la consola, desde protector arriba hasta visagras(no incluidas) -->
+        <div class="superior">
+            <!-- Marco superior incluidos protectores de pantalla -->
             <div class="superior-superior">
                 <div class="protector" id="protector-izquierdo"></div>
                 <div class="pro-medio"></div>
                 <div class="protector" id="protector-derecha"></div>
             </div>
+            <!-- Parte de la pantalla junto al logotipo -->
             <div class="superior-medio">
                 <div class="pantalla">
                     <div class="lcd">
@@ -23,15 +27,82 @@
                     </div>
                 </div>
             </div>
+            <!-- Parte inferior de la pantalla incluidos protectores de pantalla -->
             <div class="superior-abajo">
                 <div class="bajo-pantalla">
                     <div class="pro-medio" id="protector-izquierdo"></div>
                     <div class="pro-medio" id="protector-derecha"></div>
                 </div>
             </div>
-
-        <div class="visagras"></div>
-        <div class="inferior"></div>
+        </div>
+        <!-- Parte de las bisagras en medio -->
+        <div class="bisagras">
+            <div class="bisagrat" id="bisagrat-1"></div>
+            <div class="bisagrat" id="bisagrat-2"></div>
+            <div class="bisagrat" id="bisagrat-3"></div>
+            <div class="bisagrat" id="bisagrat-4"></div>
+            <div class="bisagrat" id="bisagrat-5"></div>
+        </div>
+        <!-- Parte de abajo de la consola -->
+        <div class="inferior">
+            <!-- Parte del boton luz + los 2 led -->
+            <div class="inferior-superior">
+                <div class="bt-luz">
+                    <div class="bt-luz-real"></div>
+                </div>
+                <div class="led">
+                    <div class="led-arriba"></div>
+                    <div class="led-abajo"></div>
+                </div>
+            </div>
+            <!-- Parte del Dpad y botones A+B -->
+            <div class="inferior-medio">
+                <div class="inferior-medio-borde"></div>
+                <div class="inferior-medio-dpad">
+                    <div class="dpad">
+                        <div class="dpad-boton">
+                            <div class="dpad-arriba"></div>
+                            <div class="dpad-derecha"></div>
+                            <div class="dpad-izquierda"></div>
+                            <div class="dpad-abajo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inferior-medio-borde"></div>
+                <div class="inferior-medio-borde"></div>
+                <div class="inferior-medio-a+b">
+                    <div class="a+b-boton">
+                        <div class="boton-a"></div>
+                        <div class="boton-b"></div>
+                    </div>
+                </div>
+                <div class="inferior-medio-borde"></div>
+            </div>
+            <!-- Parte de los agujeros -->
+            <div class="inferior-abajo">
+                <div class="inferior-abajo-borde"></div>
+                <div class="inferior-abajo-grande"></div>
+                <div class="inferior-abajo-borde">
+                    <div class="agujeros"></div>
+                </div>
+                <div class="inferior-abajo-borde">
+                    <div class="agujeros"></div>
+                </div>
+                <div class="inferior-abajo-grande"></div>
+                <div class="inferior-abajo-borde"></div>
+            </div>
+            <!-- Parte de los botones select+start -->
+            <div class="abajo-abajo">
+                <div class="abajo-abajo-borde"></div>
+                <div class="abajo-abajo-grande"></div>
+                <div class="abajo-abajo-botones">
+                    <div class="boton-start"></div>
+                    <div class="boton-select"></div>
+                </div>
+                <div class="abajo-abajo-grande"></div>
+                <div class="abajo-abajo-borde"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
