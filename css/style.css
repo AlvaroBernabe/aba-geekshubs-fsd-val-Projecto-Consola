@@ -112,6 +112,7 @@ body {
 .inferior-medio {
     background-color: rgb(38, 0, 255);
     height:38%;
+    display: flex;
 }
 .inferior-abajo {
     background-color: aqua;
@@ -137,7 +138,6 @@ body {
     justify-content: center;
 }
 .led {
-    margin-top: 8%;
     display: grid;
     margin-left: 9.5vw;
     margin-top: 1.5vw;
@@ -159,4 +159,39 @@ body {
     align-items: right;
     justify-content: right;
     margin-left: 0.6vw;
+}
+    /* Fin del boton luz + led */
+    /* Boton a + b alrededor */
+.ab-boton {
+    height: 60px;
+    width: 110px;
+    background: rgb(23, 17, 117);
+    border-radius: 72px;
+    transform: rotate(-15deg);
+    border-left: 20px;
+    position: relative;
+    right: -16vw;
+    bottom: -2vw;
+}
+.boton-a {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    text-align: center;
+}
+.boton-b {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    text-align: center;
 }
