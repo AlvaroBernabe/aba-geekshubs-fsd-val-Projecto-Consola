@@ -34,17 +34,68 @@ body {
 
     /* Parte superior de la consola */
 .superior-superior {
-    background-color: pink;
     height: 12%;
     display:flex;
+    justify-content: center;
+    
 }
 .superior-medio {
-    background-color: blueviolet;
+
     height: 76%;
     display: flex;
 }
 .superior-abajo {
-    background-color: pink;
     height: 12%;
     display: flex;
+    justify-content: center;
+}
+    /* Fin estructura de la consola */
+.superior-superior-marco {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;      
+    align-items: center;         
+}
+.protector {
+    background-color: black;
+    height: 1.9vw;
+    width: 1.9vw;
+    border-radius: 100%;
+}
+.pro-medio {
+    background-color: black;
+    height: 1.6vw;
+    width: 1.6vw;
+    border-radius: 100%;
+}
+.pantalla {
+    background-color: red;
+    margin-left: 9%;
+    margin-right: 9%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.lcd {
+    background-color: green;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 82%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.logo-gba {
+    margin-left: 16%;
+    margin-top: 1%;
+}
+
+.bajo-pantalla {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
 }
