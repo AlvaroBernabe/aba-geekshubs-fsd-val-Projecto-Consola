@@ -5,30 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecto Consola</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="consolagba"></div>
-        <!-- Este es el div de los botones de dirección -->
-        <div class="cruceta">
-            <div class="cruceta" id="arriba"></div>
-            <div class="cruceta" id="abajo"></div>
-            <div class="cruceta" id="izquierda"></div>
-            <div class="cruceta" id="derecha"></div>
-        </div>
-        <!-- Este es el div del boton A y del boton B -->
-        <div class="botonprincipal">
-            <div class="botonprincipal" id="botonA"></div>
-            <div class="botonprincipal" id="botonB"></div>
-        </div>
-        <!-- Este es el div de los botones Start y Select -->
-        <div class="botonmenu">
-            <div class="botonmenu" id="botonSelect"></div>
-            <div class="botonmenu" id="botonStart"></div>
-        </div>
-        <!-- Este es el div de los botones L y R -->
-        <div class="botonsuperior">
-            <div class="botonsuperior" id="botonL"></div>
-            <div class="botonsuperior" id="botonR"></div>
-        </div>
+    <div class="container">
+        <div class="superior"></div>
+            <div class="superior-superior">
+                <div class="protector" id="protector-izquierdo"></div>
+                <div class="pro-medio"></div>
+                <div class="protector" id="protector-derecha"></div>
+            </div>
+            <div class="superior-medio">
+                <div class="pantalla">
+                    <div class="lcd">
+                    </div>
+                    <div class="logo-gba">
+                    </div>
+                </div>
+            </div>
+            <div class="superior-abajo">
+                <div class="bajo-pantalla">
+                    <div class="pro-medio" id="protector-izquierdo"></div>
+                    <div class="pro-medio" id="protector-derecha"></div>
+                </div>
+            </div>
+
+        <div class="visagras"></div>
+        <div class="inferior"></div>
+    </div>
 </body>
 </html>
