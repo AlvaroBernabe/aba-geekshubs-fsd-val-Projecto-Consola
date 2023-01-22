@@ -109,13 +109,13 @@ body {
     /* Parte abajo definida */
 .inferior-superior {
     background-color: rgb(110, 111, 112);
-    height: 19%;
+    height: 16%;
     display: flex;
 
 }
 .inferior-medio {
     background-color: rgb(110, 111, 112);
-    height:38%;
+    height:35%;
     width: 100%;
     display: flex;
     padding: 10px;
@@ -124,7 +124,13 @@ body {
 }
 .inferior-abajo {
     display: flex;
-    height: 43%;
+    height: 30%;
+    justify-content: center;
+}
+.abajo-abajo {
+    height: 18%;
+    display: flex;
+    justify-content: center;
 }
     /* Fin parte abajo definida */
     /* Boton luz + led */
@@ -336,4 +342,31 @@ border: 20px;
 }
 .bisagra3 {
 
+}
+
+    /* Parte de los agujeros */
+.inferior-abajo-border {
+    display: flex ;
+    width: 10%;
+}
+
+.inferior-abajo-boquete {
+    display: flex;
+    width: 10%;
+}
+.agujeros-vertical {
+    display: grid;
+    height: 40%;
+    width: 100%;
+    gap: 25;
+}
+.agujeros-horizontal {
+    display: flex;
+    gap:20%
+}
+.agujero {
+    background-color: black;
+    height: 1.2vh;
+    width: 1.2vh;
+    border-radius: 100%;
 }
