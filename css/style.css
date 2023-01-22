@@ -23,7 +23,6 @@ body {
     grid-row: 3 / 5;
     height: 25%;
     width: 100%;
-
     display: flex;
     align-items: center;
 }
@@ -101,8 +100,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-#gameboy {
+.bajo-pantalla {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+    /* Para logo a mano */
+/* #gameboy {
     background-color: rgb(8, 8, 8);
     color:rgb(224, 224, 224);
     font-size: x-large;
@@ -116,29 +121,48 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
-
 #sp {
     background-color: rgb(8, 8, 8);
     font-size: x-large;
     color:rgb(224, 224, 224);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+*/
+    /* Fin logo a mano */
+    /* Hasta aqui la parte superior completa */
 
-
-
-.bajo-pantalla {
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
+    /* Zona del medio bisagras */
+.bisagra1 {
+    background-color:black ;
+    width: 3px;
+    height: 97%;
+    margin-left: 8%;
 }
-    /* Hasta aqui la parte superior */
+.bisagra2 {
+    background-color:black ;
+    width: 3px;
+    height: 100%;
+    margin-left: 41%;
+}
+.bisagra3 {
+    background-color:black ;
+    width: 3px;
+    height: 100%;
+    margin-left: 33%;
+}
+.bisagra4{
+    background-color:black ;
+    width: 3px;
+    height: 97%;
+    margin-left: 6%;
+    margin-top: 1%
+}
+    /* Fin zona bisagras */
     /* Parte abajo definida */
 .inferior-superior {
     background-color: rgb(110, 111, 112);
     height: 16%;
     display: flex;
-
 }
 .inferior-medio {
     background-color: rgb(110, 111, 112);
@@ -195,7 +219,6 @@ body {
     display: flex;
     left: 61.1%;
     top:57%
-
 }
 .led-abajo {
     background-color: rgb(119, 131, 66);
@@ -205,19 +228,9 @@ body {
     display: flex;
     left: 61.1%;
     top:60%
-
-
-
 }
     /* Fin del boton luz + led */
-    /* Boton a + b alrededor */
-
-
-    /* .inferior-medio-a-b{          Desactivado de momento, "mejor" de la otra forma
-        height: 130px;
-        width: 130px;
-        background-color: green;
-    } */
+    /* Boton a + b */
 .ab-boton {
     height: 60px;
     width: 120px;
@@ -256,7 +269,6 @@ body {
 }
     /* Fin botones a+b */
     /* Botones Start + Select */
-
 .boton-start {
     height: 3%;
     width: 1.6%;
@@ -299,7 +311,6 @@ body {
     bottom: 14%;
     opacity: 45%;
 }
-
 .boton-start-sombra {
     height: 5%;
     width: 2.5%;
@@ -328,19 +339,6 @@ body {
     align-items: center;
     z-index: 2;
 }
-    /* Dpad botones                       -Desactivado de momento-
-/* .inferior-medio-borde {
-    position: absolute;
-    background-color: yellow;
-}
-
-.inferior-medio-dpad {
-    width: 130px;
-    height: 130px;
-    background-color: gold;
-    border-radius: 50%;
-} */
-
 .dpad-boton { 
     height: 15%;
     width: 7%;
@@ -372,39 +370,11 @@ body {
     border-width: 4px;
 }
     /* Dpad botones fin */
-    /* Zona del medio bisagras */
-.bisagra1 {
-    background-color:black ;
-    width: 3px;
-    height: 97%;
-    margin-left: 8%;
-}
-.bisagra2 {
-    background-color:black ;
-    width: 3px;
-    height: 100%;
-    margin-left: 41%;
-}
-.bisagra3 {
-    background-color:black ;
-    width: 3px;
-    height: 100%;
-    margin-left: 33%;
-}
-.bisagra4{
-    background-color:black ;
-    width: 3px;
-    height: 97%;
-    margin-left: 6%;
-    margin-top: 1%
-}
-
     /* Parte de los agujeros */
 .inferior-abajo-borde {
     display: flex ;
     width: 10%;
 }
-
 .inferior-abajo-boquete {
     display: flex;
     width: 10%;
@@ -432,3 +402,4 @@ body {
     border-radius: 100%;
 }
    /* Fin parte de los agujeros */
+   /* Fin del CSS */
