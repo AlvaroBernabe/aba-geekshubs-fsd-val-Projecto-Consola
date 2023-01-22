@@ -187,6 +187,7 @@ body {
     /* Boton luz + led */
 .bt-luz {
     background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     height: 1.7vw;
     width: 1.7vw;
     border-radius: 100%;
@@ -197,15 +198,27 @@ body {
     margin-top: 8%;
 }
 #brillo{
-    height: 1.6vw;
+    height: 1.7vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #brillo:hover {
-    background-color: rgb(12, 160, 20);
+    background-color: rgb(12, 160, 61);
     border-radius: 100%;
-    }
+}
+/* .sombra-luz {
+    height: 4.2%;
+    width: 2.1%;
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(49, 48, 48);
+    border-radius: 100%;
+    position: fixed;
+    left: 48.85%;
+    bottom: 39.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .led {
     display: flex;
     margin-left: 50%;
@@ -235,6 +248,7 @@ body {
     height: 60px;
     width: 120px;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 72px;
     transform: rotate(-17deg);
     border-left: 20px;
@@ -315,6 +329,7 @@ body {
     height: 5%;
     width: 2.5%;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 100%;
     position: fixed;
     left: 50.1%;
@@ -329,6 +344,7 @@ body {
     height: 5%;
     width: 2.5%;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 100%;
     position: fixed;
     left: 46.3%;
@@ -343,6 +359,7 @@ body {
     height: 15%;
     width: 7%;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 100%;
     border-left: 20px;
     position: fixed;
@@ -359,7 +376,7 @@ body {
     background-color: rgb(42, 194, 62);
     position: absolute;
     border-radius: 20%;
-    border-width: 4px
+    border-width: 4px;
 }
 .dpad-arriba {
     width: 25%;
