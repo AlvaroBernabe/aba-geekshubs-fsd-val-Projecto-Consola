@@ -4,7 +4,7 @@ body {
 }
     /* Estructura básica de la consola */
 .container {
-    background-color: rgb(252, 142, 142);
+    background-color: rgb(255, 255, 255);
     display: grid;
     height: 100vh;
     grid-template-columns: 4fr 4fr 5fr 4fr 4fr;
@@ -44,6 +44,7 @@ body {
 .superior-medio {
     height: 76%;
     display: flex;
+    justify-content: center !important;
 }
 .superior-abajo {
     height: 12%;
@@ -91,12 +92,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px;
+    border: 0%;
 }
 .logo-gba {
     margin-left: 23%;
     margin-top: 1%;
     z-index: 3;
+    justify-content: center;
+    align-items: center;
 }
 
 .bajo-pantalla {
@@ -156,27 +159,31 @@ body {
     border-radius: 100%;
     }
 .led {
-    display: grid;
-    margin-left: 9.5vw;
-    margin-top: 1.5vw;
+    display: flex;
+    margin-left: 50%;
+    margin-top: 10%;
 }
 .led-arriba {
-    background-color: rgb(0, 131, 7);
-    width: 1.1vw;
-    height: 1vh;
+    background-color: rgb(167, 77, 77);
+    position:fixed;
+    width: 0.8%;
+    height: 0.8%;
     display: flex;
-    align-items: right;
-    justify-content: right;
-    margin-left: 0.6vw;
+    left: 61.1%;
+    top:57%
+
 }
 .led-abajo {
-    background-color: rgb(90, 90, 90);
-    width: 1.1vw;
-    height: 1vh;
+    background-color: rgb(119, 131, 66);
+    position: fixed;
+    width: 0.8%;
+    height: 0.8%;
     display: flex;
-    align-items: right;
-    justify-content: right;
-    margin-left: 0.6vw;
+    left: 61.1%;
+    top:60%
+
+
+
 }
     /* Fin del boton luz + led */
     /* Boton a + b alrededor */
@@ -189,10 +196,10 @@ body {
     } */
 .ab-boton {
     height: 60px;
-    width: 110px;
-    background:linear-gradient(to bottom, rgb(92, 91, 91) 100%, rgb(247, 0, 0)10%);
+    width: 120px;
+    background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
     border-radius: 72px;
-    transform: rotate(-15deg);
+    transform: rotate(-17deg);
     border-left: 20px;
     display: flex;
     position: absolute;
@@ -201,6 +208,7 @@ body {
 }
 .boton-a {
     background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
+    rotate: 17deg;
     height: 40px;
     width: 40px;
     box-sizing: border-box;
@@ -212,6 +220,7 @@ body {
 }
 .boton-b {
     background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
+    rotate: 17deg;
     height: 40px;
     width: 40px;
     box-sizing: border-box;
@@ -297,31 +306,30 @@ body {
 } */
 
 .dpad-boton { 
-    height: 130px;
-    width: 130px;
-    background:linear-gradient(to bottom, rgb(92, 91, 91) 100%, rgb(247, 0, 0)10%);
+    height: 15%;
+    width: 7%;
+    background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
     border-radius: 100%;
     border-left: 20px;
     position: fixed;
-    left: 680px;
-    bottom: 200px;
+    left: 40%;
+    bottom: 25%;
     opacity: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .dpad-derecha {
-    width: 90px;
-    height: 32px;
+    width: 75%;
+    height: 25%;
     background-color: rgb(42, 194, 62);
     position: absolute;
     border-radius: 20%;
     border-width: 4px
 }
 .dpad-arriba {
-    width: 32px;
-    height: 90px;
+    width: 25%;
+    height: 75%;
     background-color: rgb(42, 194, 62);
     position: absolute;
     border-radius: 20%;
@@ -340,14 +348,12 @@ body {
     width: 3px;
     height: 100%;
     margin-left: 41%;
-    margin-top: 
 }
 .bisagra3 {
     background-color:black ;
     width: 3px;
     height: 100%;
     margin-left: 33%;
-    margin-top:
 }
 .bisagra4{
     background-color:black ;
@@ -358,7 +364,7 @@ body {
 }
 
     /* Parte de los agujeros */
-.inferior-abajo-border {
+.inferior-abajo-borde {
     display: flex ;
     width: 10%;
 }
@@ -366,21 +372,27 @@ body {
 .inferior-abajo-boquete {
     display: flex;
     width: 10%;
+    align-items: top;
 }
 .agujeros-vertical {
     display: grid;
-    height: 40%;
+    height: 65%;
     width: 100%;
-    gap: 25;
+    gap: 20%;
 }
 .agujeros-horizontal {
     display: flex;
-    gap:20%
+    gap: 8%;
+    height: 50%;
+    width: 2000%;
+    left: 40%;
+    top: 50%;
+    
 }
 .agujero {
     background-color: black;
-    height: 1.2vh;
-    width: 1.2vh;
+    height: 0.8vh;
+    width: 0.8vh;
     border-radius: 100%;
 }
    /* Fin parte de los agujeros */
