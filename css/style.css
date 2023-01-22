@@ -23,9 +23,12 @@ body {
     grid-row: 3 / 5;
     height: 25%;
     width: 100%;
+    opacity: 60%;
+    display: flex;
+    align-items: center;
 }
 .inferior {
-    background-color: red;
+    background-color: rgb(110, 111, 112);
     border-radius: 0% 0% 7% 7%;
     grid-column: 3 / 4;
     grid-row: 4 / 6;
@@ -37,7 +40,7 @@ body {
     height: 12%;
     display:flex;
     justify-content: center;
-    
+
 }
 .superior-medio {
     height: 76%;
@@ -53,29 +56,31 @@ body {
 .superior-superior-marco {
     display: flex;
     width: 85%;
-    justify-content: space-between;      
-    align-items: center;         
+    justify-content: space-between;
+    align-items: center;
 }
 .protector {
-    background-color: black;
+    background: linear-gradient( rgb(5, 5, 5),rgb(59, 58, 58));
     height: 1.9vw;
     width: 1.9vw;
     border-radius: 100%;
 }
 .pro-medio {
-    background-color: black;
+    background:linear-gradient(rgb(27, 27, 27),rgb(119, 118, 118));
     height: 1.5vw;
     width: 1.5vw;
     border-radius: 100%;
 }
 .pantalla {
-    background-color: red;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3%;
     margin-left: 9%;
     margin-right: 9%;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
+    z-index: 1;
 }
 
 .lcd {
@@ -90,8 +95,8 @@ body {
     border: 0px;
 }
 .logo-gba {
-    margin-left: 16%;
-    margin-top: 1%;
+    margin-left: 23%;
+    z-index: 3;
 }
 
 .bajo-pantalla {
@@ -103,18 +108,22 @@ body {
     /* Hasta aqui la parte superior */
     /* Parte abajo definida */
 .inferior-superior {
-    background-color: aqua;
+    background-color: rgb(110, 111, 112);
     height: 19%;
     display: flex;
 
 }
 .inferior-medio {
-    background-color: rgb(38, 0, 255);
+    background-color: rgb(110, 111, 112);
     height:38%;
+    width: 100%;
     display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 .inferior-abajo {
-    background-color: aqua;
+    display: flex;
     height: 43%;
 }
     /* Fin parte abajo definida */
@@ -161,6 +170,13 @@ body {
 }
     /* Fin del boton luz + led */
     /* Boton a + b alrededor */
+
+
+    /* .inferior-medio-a-b{          Desactivado de momento, "mejor" de la otra forma
+        height: 130px;
+        width: 130px;
+        background-color: green;
+    } */
 .ab-boton {
     height: 60px;
     width: 110px;
@@ -168,9 +184,10 @@ body {
     border-radius: 72px;
     transform: rotate(-15deg);
     border-left: 20px;
-    position: relative;
-    right: -16vw;
-    bottom: -2vw;
+    display: flex;
+    position: absolute;
+    right: 41vw;
+    bottom:  29vh;
 }
 .boton-a {
     background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
@@ -247,6 +264,7 @@ body {
     height: 50px;
     width: 50px;
     background: rgb(23, 17, 117);
+    background-image: conic-gradient ;
     border-radius: 100%;
     transform: rotate(-15deg);
     border-left: 20px;
@@ -255,4 +273,67 @@ body {
     bottom: 60px;
     z-index: 2;
     opacity: 50%;
+}
+    /* Dpad botones                       -Desactivado de momento-
+/* .inferior-medio-borde {
+    position: absolute;
+    background-color: yellow;
+}
+
+.inferior-medio-dpad {
+    width: 130px;
+    height: 130px;
+    background-color: gold;
+    border-radius: 50%;
+} */
+
+.dpad-boton { 
+    height: 130px;
+    width: 130px;
+    background: rgb(23, 17, 117);
+    border-radius: 100%;
+    border-left: 20px;
+    position: fixed;
+    left: 680px;
+    bottom: 200px;
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dpad-derecha {
+    width: 90px;
+    height: 32px;
+    background-color: rgb(0, 158, 21);
+    position: absolute;
+    border-radius: 20%;
+    border-width: 4px
+}
+.dpad-arriba {
+    width: 32px;
+    height: 90px;
+    background-color: rgb(0, 158, 21);
+    position: absolute;
+    border-radius: 20%;
+    border-width: 4px;
+}
+    /* Dpad botones fin */
+    /* Zona del medio bisagras */
+.bisagras {
+    border-left: solid rgb(0, 0, 0);
+    height: 25%;
+    width: 100%;
+}
+.bisagra1 {
+background-color: #640116;
+height: 20px;
+border: 20px;
+
+}
+.bisagra2 {
+    margin-left: 20%;
+}
+.bisagra3 {
+
 }
