@@ -332,16 +332,32 @@ body {
     width: 100%;
 }
 .bisagra1 {
-background-color: #640116;
-height: 20px;
-border: 20px;
-
+    background-color:black ;
+    width: 5px;
+    height: 48px;
+    margin-left: 30px;
+    margin-top: 2px;
 }
 .bisagra2 {
-    margin-left: 20%;
+    background-color:black ;
+    width: 5px;
+    height: 50px;
+    margin-left: 160px;
+    margin-top: -1px;
 }
 .bisagra3 {
-
+    background-color:black ;
+    width: 5px;
+    height: 48px;
+    margin-left: 135px;
+    margin-top: 2px;
+}
+.bisagra4{
+    background-color:black ;
+    width: 5px;
+    height: 48px;
+    margin-left: 25px;
+    margin-top: 2px;
 }
 
     /* Parte de los agujeros */
@@ -370,3 +386,5 @@ border: 20px;
     width: 1.2vh;
     border-radius: 100%;
 }
+
+/* Fin parte de los agujeros */
