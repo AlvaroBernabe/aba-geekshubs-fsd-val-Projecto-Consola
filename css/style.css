@@ -17,13 +17,13 @@ body {
     grid-row: 2 / 3;
 }
 .bisagras {
-    background-color: green;
+    background: linear-gradient(to bottom, #7c7b7b 0%, #3a3939 100%);
     border-radius: 20% 20% 0% 0%;
     grid-column: 3 / 4;
     grid-row: 3 / 5;
     height: 25%;
     width: 100%;
-    opacity: 60%;
+
     display: flex;
     align-items: center;
 }
@@ -34,7 +34,6 @@ body {
     grid-row: 4 / 6;
 }
     /* Fin estructura básica de la consola */
-
     /* Parte superior de la consola */
 .superior-superior {
     height: 12%;
@@ -60,13 +59,13 @@ body {
     align-items: center;
 }
 .protector {
-    background: linear-gradient( rgb(5, 5, 5),rgb(59, 58, 58));
+    background: linear-gradient( rgb(0, 0, 0),rgb(59, 58, 58));
     height: 1.9vw;
     width: 1.9vw;
     border-radius: 100%;
 }
 .pro-medio {
-    background:linear-gradient(rgb(27, 27, 27),rgb(119, 118, 118));
+    background:linear-gradient(rgb(87, 86, 86),rgb(27, 27, 27));
     height: 1.5vw;
     width: 1.5vw;
     border-radius: 100%;
@@ -75,7 +74,7 @@ body {
     background-color: rgb(0, 0, 0);
     border-radius: 3%;
     margin-left: 9%;
-    margin-right: 9%;
+    margin-right: 9%; 
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -84,7 +83,7 @@ body {
 }
 
 .lcd {
-    background-color: green;
+    background-color: rgb(150, 156, 121);
     margin-left: 5%;
     margin-top: 5%;
     height: 82%;
@@ -96,6 +95,7 @@ body {
 }
 .logo-gba {
     margin-left: 23%;
+    margin-top: 1%;
     z-index: 3;
 }
 
@@ -135,7 +135,7 @@ body {
     /* Fin parte abajo definida */
     /* Boton luz + led */
 .bt-luz {
-    background-color: rgb(71, 141, 53);
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     height: 1.7vw;
     width: 1.7vw;
     border-radius: 100%;
@@ -151,6 +151,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+#brillo:hover {
+    background-color: rgb(12, 160, 20);
+    border-radius: 100%;
+    }
 .led {
     display: grid;
     margin-left: 9.5vw;
@@ -186,7 +190,7 @@ body {
 .ab-boton {
     height: 60px;
     width: 110px;
-    background: rgb(23, 17, 117);
+    background:linear-gradient(to bottom, rgb(92, 91, 91) 100%, rgb(247, 0, 0)10%);
     border-radius: 72px;
     transform: rotate(-15deg);
     border-left: 20px;
@@ -196,7 +200,7 @@ body {
     bottom:  29vh;
 }
 .boton-a {
-    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     height: 40px;
     width: 40px;
     box-sizing: border-box;
@@ -207,7 +211,7 @@ body {
     text-align: center;
 }
 .boton-b {
-    background: linear-gradient(to bottom, #3f3f3f 0%, #640116 100%);
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     height: 40px;
     width: 40px;
     box-sizing: border-box;
@@ -221,19 +225,18 @@ body {
     /* Botones Start + Select */
 
 .boton-start {
-    background-color: rgb(71, 141, 53);
+    background-color: rgb(42, 194, 62);
     height: 2.1vw;
     width: 2.1vw;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 36%;
+    margin-left: 30%;
     margin-top: -13%;
-    z-index: 3;
 }
 .boton-select {
-    background-color: rgb(71, 141, 53);
+    background-color: rgb(42, 194, 62);
     height: 2.1vw;
     width: 2.1vw;
     border-radius: 100%;
@@ -244,13 +247,13 @@ body {
     margin-top: -8.8%;
 }
 #select {
-    margin-top: -200%;
-    margin-left: -20%;
+    margin-top: -188%;
+    margin-left: -300%;
     font-size: medium;
 }
 #start {
-    margin-top: -200%;
-    margin-left: 20%;
+    margin-top: -370%;
+    margin-left: 50%;
     font-size: medium;
 }
 
@@ -296,13 +299,13 @@ body {
 .dpad-boton { 
     height: 130px;
     width: 130px;
-    background: rgb(23, 17, 117);
+    background:linear-gradient(to bottom, rgb(92, 91, 91) 100%, rgb(247, 0, 0)10%);
     border-radius: 100%;
     border-left: 20px;
     position: fixed;
     left: 680px;
     bottom: 200px;
-    opacity: 50%;
+    opacity: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,7 +314,7 @@ body {
 .dpad-derecha {
     width: 90px;
     height: 32px;
-    background-color: rgb(0, 158, 21);
+    background-color: rgb(42, 194, 62);
     position: absolute;
     border-radius: 20%;
     border-width: 4px
@@ -319,45 +322,39 @@ body {
 .dpad-arriba {
     width: 32px;
     height: 90px;
-    background-color: rgb(0, 158, 21);
+    background-color: rgb(42, 194, 62);
     position: absolute;
     border-radius: 20%;
     border-width: 4px;
 }
     /* Dpad botones fin */
     /* Zona del medio bisagras */
-.bisagras {
-    border-left: solid rgb(0, 0, 0);
-    height: 25%;
-    width: 100%;
-}
 .bisagra1 {
     background-color:black ;
-    width: 5px;
-    height: 48px;
-    margin-left: 30px;
-    margin-top: 2px;
+    width: 3px;
+    height: 97%;
+    margin-left: 8%;
 }
 .bisagra2 {
     background-color:black ;
-    width: 5px;
-    height: 50px;
-    margin-left: 160px;
-    margin-top: -1px;
+    width: 3px;
+    height: 100%;
+    margin-left: 41%;
+    margin-top: 
 }
 .bisagra3 {
     background-color:black ;
-    width: 5px;
-    height: 48px;
-    margin-left: 135px;
-    margin-top: 2px;
+    width: 3px;
+    height: 100%;
+    margin-left: 33%;
+    margin-top:
 }
 .bisagra4{
     background-color:black ;
-    width: 5px;
-    height: 48px;
-    margin-left: 25px;
-    margin-top: 2px;
+    width: 3px;
+    height: 97%;
+    margin-left: 6%;
+    margin-top: 1%
 }
 
     /* Parte de los agujeros */
@@ -386,5 +383,4 @@ body {
     width: 1.2vh;
     border-radius: 100%;
 }
-
-/* Fin parte de los agujeros */
+   /* Fin parte de los agujeros */
