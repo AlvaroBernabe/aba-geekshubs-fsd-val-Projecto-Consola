@@ -12,6 +12,7 @@ Licencia de tipo MIT, con lo que cualquiera es libre de coger parte del código 
 
 -Novedades de la versión actual.
 Se "enciende" el botón luz al pasar en ratón por encima.
+El icono cambia en funcion del botón en el que estés situado >.<
 
 -Futuras versiones.
 ETA: 0 a ∞ unidades de tiempo.
