@@ -102,6 +102,30 @@ body {
     align-items: center;
 }
 
+#gameboy {
+    background-color: rgb(8, 8, 8);
+    color:rgb(224, 224, 224);
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#advance {
+    background-color: rgb(0, 0, 0);
+    color: rgb(224, 224, 224);
+    font-size: large;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#sp {
+    background-color: rgb(8, 8, 8);
+    font-size: x-large;
+    color:rgb(224, 224, 224);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
 .bajo-pantalla {
     display: flex;
     width: 90%;
@@ -146,7 +170,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 46%;
-    margin-top: 3%;
+    margin-top: 8%;
 }
 #brillo{
     height: 1.6vw;
@@ -262,14 +286,18 @@ body {
 #select {
     position: fixed;
     font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     left: 46%;
     bottom: 14%;
+    opacity: 45%;
 }
 #start {
     position: fixed;
     font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     left: 50.3%;
     bottom: 14%;
+    opacity: 45%;
 }
 
 .boton-start-sombra {
