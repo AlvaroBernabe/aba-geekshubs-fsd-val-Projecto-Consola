@@ -234,63 +234,71 @@ body {
     /* Botones Start + Select */
 
 .boton-start {
-    background-color: rgb(42, 194, 62);
-    height: 2.1vw;
-    width: 2.1vw;
+    height: 3%;
+    width: 1.6%;
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     border-radius: 100%;
+    position: fixed;
+    left: 50.6%;
+    bottom: 9%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 30%;
-    margin-top: -13%;
+    align-items: center;
+    z-index: 3;
 }
 .boton-select {
-    background-color: rgb(42, 194, 62);
-    height: 2.1vw;
-    width: 2.1vw;
+    height: 3%;
+    width: 1.6%;
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     border-radius: 100%;
+    position: fixed;
+    left: 46.75%;
+    bottom: 9%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 52%;
-    margin-top: -8.8%;
+    align-items: center;
+    z-index: 3;
 }
 #select {
-    margin-top: -188%;
-    margin-left: -300%;
+    position: fixed;
     font-size: medium;
+    left: 46%;
+    bottom: 14%;
 }
 #start {
-    margin-top: -370%;
-    margin-left: 50%;
+    position: fixed;
     font-size: medium;
+    left: 50.3%;
+    bottom: 14%;
 }
 
 .boton-start-sombra {
-    height: 50px;
-    width: 50px;
-    background: rgb(23, 17, 117);
-    border-radius: 72px;
-    transform: rotate(-15deg);
-    border-left: 20px;
+    height: 5%;
+    width: 2.5%;
+    background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    border-radius: 100%;
     position: fixed;
-    left: 854px;
-    bottom: 60px;
-    opacity: 50%;
+    left: 50.1%;
+    bottom: 8%;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 .boton-select-sombra {
-    height: 50px;
-    width: 50px;
-    background: rgb(23, 17, 117);
-    background-image: conic-gradient ;
+    height: 5%;
+    width: 2.5%;
+    background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
     border-radius: 100%;
-    transform: rotate(-15deg);
-    border-left: 20px;
     position: fixed;
-    left: 789px;
-    bottom: 60px;
+    left: 46.3%;
+    bottom: 8%;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 2;
-    opacity: 50%;
 }
     /* Dpad botones                       -Desactivado de momento-
 /* .inferior-medio-borde {
