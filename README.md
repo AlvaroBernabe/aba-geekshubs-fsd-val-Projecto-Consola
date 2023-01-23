@@ -3,7 +3,7 @@
 -Introducción:
 En este proyecto he intentado recrear lo más fielmente posible (con los conocimientos que tengo actualmente) la consola Game Boy Advance el modelo SP concretamente.
 Puedes encontrar el proyecto en el siguiente enlace: 
-https://github.com/alvarito101093/aba-geekshubs-fsd-val-Projecto-Consola
+https://alvarito101093.github.io/aba-geekshubs-fsd-val-Projecto-Consola/
 
 -Lenguajes utilizados:
 Ha sido desarrollado completamente con HTML5 y CSS3.
