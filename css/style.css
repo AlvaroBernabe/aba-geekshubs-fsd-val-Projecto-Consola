@@ -187,7 +187,7 @@ body {
     /* Boton luz + led */
 .bt-luz {
     background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
-    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     height: 1.7vw;
     width: 1.7vw;
     border-radius: 100%;
@@ -210,7 +210,7 @@ body {
 /* .sombra-luz {
     height: 4.2%;
     width: 2.1%;
-    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(49, 48, 48);
+    box-shadow: inset 0px 0px 6px 0px rgb(49, 48, 48);
     border-radius: 100%;
     position: fixed;
     left: 48.85%;
@@ -248,7 +248,7 @@ body {
     height: 60px;
     width: 120px;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
-    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 72px;
     transform: rotate(-17deg);
     border-left: 20px;
@@ -329,7 +329,7 @@ body {
     height: 5%;
     width: 2.5%;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
-    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 100%;
     position: fixed;
     left: 50.1%;
@@ -344,7 +344,7 @@ body {
     height: 5%;
     width: 2.5%;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
-    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 100%;
     position: fixed;
     left: 46.3%;
@@ -359,7 +359,7 @@ body {
     height: 15%;
     width: 7%;
     background:linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
-    -webkit-box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 100%;
     border-left: 20px;
     position: fixed;
