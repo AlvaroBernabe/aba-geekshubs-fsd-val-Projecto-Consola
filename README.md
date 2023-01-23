@@ -1,4 +1,5 @@
 # Bienvenido a mi primer proyecto! :)
+
 -Introducción:
 En este proyecto he intentado recrear lo más fielmente posible (con los conocimientos que tengo actualmente) la consola Game Boy Advance el modelo SP concretamente.
 Puedes encontrar el proyecto en el siguiente enlace: 
