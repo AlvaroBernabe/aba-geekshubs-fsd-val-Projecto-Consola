@@ -106,31 +106,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-    /* Para logo a mano */
-/* #gameboy {
-    background-color: rgb(8, 8, 8);
-    color:rgb(224, 224, 224);
-    font-size: x-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#advance {
-    background-color: rgb(0, 0, 0);
-    color: rgb(224, 224, 224);
-    font-size: large;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-#sp {
-    background-color: rgb(8, 8, 8);
-    font-size: x-large;
-    color:rgb(224, 224, 224);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-*/
-    /* Fin logo a mano */
     /* Hasta aqui la parte superior completa */
-
     /* Zona del medio bisagras */
 .bisagra1 {
     background-color:black ;
@@ -207,18 +183,6 @@ body {
     background-color: rgb(12, 160, 61);
     border-radius: 100%;
 }
-/* .sombra-luz {
-    height: 4.2%;
-    width: 2.1%;
-    box-shadow: inset 0px 0px 6px 0px rgb(49, 48, 48);
-    border-radius: 100%;
-    position: fixed;
-    left: 48.85%;
-    bottom: 39.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 .led {
     display: flex;
     margin-left: 50%;
