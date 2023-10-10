@@ -407,6 +407,51 @@ body {
     height: 70%;
 }
 
+/* Parte de los triangulos del D-Pad */
+
+/* Estilizando y posicionando los triángulos en cada esquina */
+.dpad-arriba::before,
+.dpad-derecha::before,
+.dpad-izquierda::before,
+.dpad-abajo::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* Estilo individual para cada triángulo */
+.dpad-arriba::before {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #1d9e26 transparent;
+    top: 4px;
+    left: calc(50% - 8px);
+}
+
+.dpad-derecha::before {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent #1d9e26 transparent;
+    rotate: -45deg;
+    top: calc(50% - 12px);
+    right: 10px;
+}
+
+.dpad-izquierda::before {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent transparent #1d9e26 transparent;
+    rotate: 45deg;
+    top: calc(50% - 12px);
+    left: 28px;
+}
+
+.dpad-abajo::before {
+    border-width: 8px 8px 0 8px;
+    border-color: #00990f transparent transparent transparent;
+    bottom: 20px;
+    left: calc(50% - 8px);
+}
+
 /* Dpad botones fin */
 /* Parte de los agujeros */
 .inferior-abajo-borde {
