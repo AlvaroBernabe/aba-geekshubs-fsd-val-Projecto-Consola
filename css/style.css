@@ -236,8 +236,9 @@ body {
 /* Fin del boton luz + led */
 /* Boton a + b */
 .ab-boton {
-    height: 60px;
-    width: 120px;
+    height: 8vh;
+    width: 8vw;
+    background-color: #058f00;
     background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
     box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 72px;
@@ -245,21 +246,30 @@ body {
     border-left: 20px;
     display: flex;
     position: absolute;
-    right: 41vw;
-    bottom: 29vh;
+    right: 39.5vw;
+    bottom: 30vh; 
 }
 
-.boton-a {
+.boton-a, .boton-b {
     background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     rotate: 17deg;
-    height: 40px;
-    width: 40px;
+    height: 60%;
+    width: 30%;
     box-sizing: border-box;
     border-radius: 100%;
     position: absolute;
+    text-align: center;
+}
+
+.boton-a {
     top: 8px;
     right: 9px;
-    text-align: center;
+}
+
+.boton-b {
+    top: 10px;
+    left: 8px;
+
 }
 
 .boton-a:hover,
@@ -275,108 +285,77 @@ body {
         inset 0 -0.15em 0.2em 0.1em black;
 }
 
-.boton-b {
-    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
-    rotate: 17deg;
-    height: 40px;
-    width: 40px;
-    box-sizing: border-box;
-    border-radius: 100%;
-    position: absolute;
-    top: 10px;
-    left: 8px;
-    text-align: center;
-}
-
 /* Fin botones a+b */
 /* Botones Start + Select */
-.boton-start {
+.boton-start, .boton-select {
     height: 3%;
     width: 1.6%;
     background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     border-radius: 100%;
     position: fixed;
-    left: 50.6%;
     bottom: 9%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
+}
+
+.boton-start {
+    left: 50.6%;
 }
 
 .boton-select {
-    height: 3%;
-    width: 1.6%;
-    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
-    border-radius: 100%;
-    position: fixed;
     left: 46.75%;
-    bottom: 9%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
+}
+
+#select, #start {
+    position: fixed;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom: 14%;
+    opacity: 45%;
 }
 
 #select {
-    position: fixed;
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     left: 46%;
-    bottom: 14%;
-    opacity: 45%;
 }
 
 #start {
-    position: fixed;
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     left: 50.3%;
-    bottom: 14%;
-    opacity: 45%;
+}
+
+.boton-start-sombra, .boton-select-sombra {
+    height: 5%;
+    width: 2.5%;
+    background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    border-radius: 100%;
+    position: fixed;
+    bottom: 8%;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
 .boton-start-sombra {
-    height: 5%;
-    width: 2.5%;
-    background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
-    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
-    border-radius: 100%;
-    position: fixed;
     left: 50.1%;
-    bottom: 8%;
-    opacity: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
 }
 
 .boton-select-sombra {
-    height: 5%;
-    width: 2.5%;
-    background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
-    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
-    border-radius: 100%;
-    position: fixed;
     left: 46.3%;
-    bottom: 8%;
-    opacity: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
 }
 
 .dpad-boton {
-    height: 15%;
-    width: 7%;
+    height: 15vh;
+    width: 7vw;
     background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
     box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
     border-radius: 100%;
     border-left: 20px;
     position: fixed;
-    left: 40%;
+    left: 39.5%;
     bottom: 25%;
     opacity: 90%;
     display: flex;
@@ -384,22 +363,21 @@ body {
     align-items: center;
 }
 
-.dpad-derecha {
-    width: 75%;
-    height: 25%;
+.dpad-derecha, .dpad-arriba {
     background-color: rgb(42, 194, 62);
     position: absolute;
     border-radius: 20%;
     border-width: 4px;
 }
 
+.dpad-derecha {
+    width: 75%;
+    height: 25%;
+}
+
 .dpad-arriba {
     width: 25%;
     height: 75%;
-    background-color: rgb(42, 194, 62);
-    position: absolute;
-    border-radius: 20%;
-    border-width: 4px;
 }
 
 /* Dpad botones fin */
