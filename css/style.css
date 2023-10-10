@@ -105,10 +105,15 @@ body {
     z-index: 3;
     justify-content: center;
     align-items: center;
+    display: flex;
+    width: 100%;
 }
 
 #logo {
 height: 1.3rem;
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
 }
 
 .bajo-pantalla {
@@ -183,6 +188,7 @@ height: 1.3rem;
     justify-content: center;
     margin-left: 46%;
     margin-top: 8%;
+    cursor: pointer;
 }
 #brillo{
     height: 1.7vw;
