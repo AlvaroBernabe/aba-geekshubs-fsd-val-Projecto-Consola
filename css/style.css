@@ -93,6 +93,12 @@ body {
     align-items: center;
     border: 0%;
 }
+
+.lcd video {
+    width: 100%;
+    height: 100%;
+}
+
 .logo-gba {
     margin-left: 23%;
     margin-top: 1%;
@@ -100,6 +106,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#logo {
+height: 1.3rem;
+}
+
 .bajo-pantalla {
     display: flex;
     width: 90%;
@@ -233,6 +244,14 @@ body {
     right: 9px;
     text-align: center;
 }
+.boton-a:hover, .boton-b:hover, .boton-start:hover, .boton-select:hover, .dpad-boton:hover{
+    cursor: pointer;
+    box-shadow: inset 0.15em 0 0.2em 0.1em rgb(4, 228, 79),
+    inset -0.15em 0 0.2em 0.1em rgb(27, 155, 2),
+    inset 0 0.15em 0.2em 0.1em black,
+    inset 0 -0.15em 0.2em 0.1em black;
+}
+
 .boton-b {
     background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
     rotate: 17deg;

@@ -26,8 +26,8 @@
                 <div class="pantalla">
                     <div class="lcd"></div>
             <!-- Logo consola  -->
-            <div class="logo-gba"> <img src="./img/logogba.png" 
-                alt="logogba" srcset="" height="25px"></div>
+            <div class="logo-gba"> <img src="./img/logogba.png" id="logo"
+                alt="logogba" srcset=""></div>
             </div>
         </div>
             <!-- Parte inferior de la pantalla incluidos protectores de pantalla -->
@@ -137,8 +137,8 @@
                 <div class="abajo-abajo-borde"></div>
                 <div class="abajo-abajo-grande"></div>
                 <div class="abajo-abajo-botones">
-                    <div class="boton-start"><span id="select">SELECT</span></div>
-                    <div class="boton-select"><span id="start">START</span></div>
+                    <div class="boton-select"><span id="select">SELECT</span></div>
+                    <div class="boton-start" onclick="iniciarIntro()" video.muted = true;><span id="start">START</span></div>
                     <div class="boton-start-sombra"></div>
                     <div class="boton-select-sombra"></div>
                 </div>
@@ -147,5 +147,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
