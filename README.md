@@ -7,11 +7,11 @@ https://alvarito101093.github.io/aba-geekshubs-fsd-val-Projecto-Consola/
 
 Resumiendo el proceso bastante:
 
-<pre> Esta es la distribución de Divs inicial     |      Este es el modelo que he seguido        |         Foto finish!!! |  </pre>
+<pre> Este es el modelo que he seguido            |        Foto finish!!!           |        Esta es la distribución de Divs inicial |  </pre>
 
-|![Div](https://user-images.githubusercontent.com/122753448/214079203-80b6390f-5d46-4f90-b02e-bf28f4b1e475.png)| 
 ![modelo a hacer](https://user-images.githubusercontent.com/122753448/214079312-6c615a70-1a4a-43e7-b142-4e19e50c39db.png)|
 !<img width="248" alt="image" src="https://github.com/AlvaroBernabe/aba-geekshubs-fsd-val-Projecto-Consola/assets/122753448/39f202fa-a215-4ae6-b494-baadf6ce734e">|
+|![Div](https://user-images.githubusercontent.com/122753448/214079203-80b6390f-5d46-4f90-b02e-bf28f4b1e475.png)| 
 
 <h3>-Features:</h3>
 - Cambiar la intensidad de la pantalla con el Botón Superior de la Luz.
