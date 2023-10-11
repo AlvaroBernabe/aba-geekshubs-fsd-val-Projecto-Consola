@@ -292,7 +292,6 @@ body {
 .boton-b {
     top: 10px;
     left: 8px;
-
 }
 
 .boton-a:hover,
@@ -307,9 +306,6 @@ body {
         inset 0 0.15em 0.2em 0.1em black,
         inset 0 -0.15em 0.2em 0.1em black;
 }
-
-
-
 
 .boton-a,
 .boton-b,
@@ -336,11 +332,6 @@ body {
     transform: translateY(4px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
 
 /* Fin botones a+b */
 /* Botones Start + Select */
@@ -443,8 +434,31 @@ body {
     height: 70%;
 }
 
-/* Parte de los triangulos del D-Pad */
+.dpad-arriba,
+.dpad-derecha,
+.dpad-izquierda,
+.dpad-abajo {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
 
+.dpad-arriba:active {
+    transform: translateY(-3px);
+}
+
+.dpad-derecha:active {
+    transform: translateX(3px);
+}
+
+.dpad-izquierda:active {
+    transform: translateX(-3px);
+}
+
+.dpad-abajo:active {
+    transform: translateY(3px);
+}
+
+/* Parte de los triangulos del D-Pad */
 /* Estilizando y posicionando los triángulos en cada esquina */
 .dpad-arriba::before,
 .dpad-derecha::before,
@@ -515,7 +529,6 @@ body {
     width: 2000%;
     left: 40%;
     top: 50%;
-
 }
 
 .agujero {
@@ -525,5 +538,4 @@ body {
     border-radius: 100%;
 }
 
-/* Fin parte de los agujeros */
-/* Fin del CSS */
+/* Fin parte de los agujeros y del CSS */
