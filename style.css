@@ -233,12 +233,12 @@ body {
 }
 
 .led-arriba {
-    background-color: rgb(167, 77, 77);
+    background-color: rgb(114, 172, 75);
     top: 56%
 }
 
 .led-abajo {
-    background-color: rgb(119, 131, 66);
+    background-color: rgb(118, 69, 65);
     top: 59%
 }
 

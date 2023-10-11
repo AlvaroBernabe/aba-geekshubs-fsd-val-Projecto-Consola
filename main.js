@@ -2,9 +2,20 @@ function iniciarIntro() {
     var video = document.createElement("video");
     video.src = "./intro.mp4";
     video.autoplay = true;
+
     var lcd = document.querySelector(".lcd");
     lcd.innerHTML = "";
     lcd.appendChild(video);
+
+    var ledArriba = document.querySelector('.led-arriba');
+
+    video.addEventListener('play', function () {
+        ledArriba.style.backgroundColor = "rgb(2, 250, 2)";
+    });
+
+    video.addEventListener('ended', function () {
+        ledArriba.style.backgroundColor = "rgb(114, 172, 75)";
+    });
 };
 
 document.getElementById('brillo').addEventListener('click', cambiarBrillo);
