@@ -213,6 +213,10 @@ body {
     height: 1.4vw;
 }
 
+#brillo.iluminado {
+    filter: brightness(1.5) sepia(1) hue-rotate(50deg) !important;
+}
+
 .led {
     display: flex;
     margin-left: 50%;
@@ -229,12 +233,12 @@ body {
 }
 
 .led-arriba {
-    background-color: rgb(167, 77, 77);
+    background-color: rgb(114, 172, 75);
     top: 56%
 }
 
 .led-abajo {
-    background-color: rgb(119, 131, 66);
+    background-color: rgb(118, 69, 65);
     top: 59%
 }
 
@@ -288,7 +292,6 @@ body {
 .boton-b {
     top: 10px;
     left: 8px;
-
 }
 
 .boton-a:hover,
@@ -302,6 +305,32 @@ body {
         inset -0.15em 0 0.2em 0.1em rgb(27, 155, 2),
         inset 0 0.15em 0.2em 0.1em black,
         inset 0 -0.15em 0.2em 0.1em black;
+}
+
+.boton-a,
+.boton-b,
+.boton-start,
+.boton-select,
+.bt-luz {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+}
+
+.boton-a:hover,
+.boton-b:hover,
+.boton-start:hover,
+.boton-select:hover,
+.bt-luz:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-a:active,
+.boton-b:active,
+.boton-start:active,
+.boton-select:active,
+.bt-luz:active {
+    transform: translateY(4px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Fin botones a+b */
@@ -331,11 +360,7 @@ body {
 #select,
 #start {
     position: fixed;
-    /* font-size: 1.1vw; */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    bottom: 14%;
     opacity: 45%;
-
     font-family: Impact, sans-serif;
     color: rgb(40, 39, 39);
     font-size: 0.9rem;
@@ -343,11 +368,13 @@ body {
 }
 
 #select {
-    left: 46.3%;
+    left: 46.2%;
+    top: 84%;
 }
 
 #start {
-    left: 50.3%;
+    left: 50.2%;
+    top: 84%;
 }
 
 .boton-start-sombra,
@@ -407,8 +434,31 @@ body {
     height: 70%;
 }
 
-/* Parte de los triangulos del D-Pad */
+.dpad-arriba,
+.dpad-derecha,
+.dpad-izquierda,
+.dpad-abajo {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
 
+.dpad-arriba:active {
+    transform: translateY(-3px);
+}
+
+.dpad-derecha:active {
+    transform: translateX(3px);
+}
+
+.dpad-izquierda:active {
+    transform: translateX(-3px);
+}
+
+.dpad-abajo:active {
+    transform: translateY(3px);
+}
+
+/* Parte de los triangulos del D-Pad */
 /* Estilizando y posicionando los triángulos en cada esquina */
 .dpad-arriba::before,
 .dpad-derecha::before,
@@ -479,7 +529,6 @@ body {
     width: 2000%;
     left: 40%;
     top: 50%;
-
 }
 
 .agujero {
@@ -489,5 +538,4 @@ body {
     border-radius: 100%;
 }
 
-/* Fin parte de los agujeros */
-/* Fin del CSS */
+/* Fin parte de los agujeros y del CSS */
