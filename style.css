@@ -1,0 +1,525 @@
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+/* Estructura básica de la consola */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 4fr 4fr 4.4fr 4fr 4fr;
+    grid-template-rows: 1fr 7fr 1fr 3fr 4fr 1fr;
+}
+
+.superior {
+    background-color: rgb(110, 111, 112);
+    border-radius: 6.7%;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.bisagras {
+    background: linear-gradient(to bottom, #7c7b7b 0%, #3a3939 100%);
+    border-radius: 20% 20% 0% 0%;
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.inferior {
+    background-color: rgb(110, 111, 112);
+    border-radius: 0% 0% 7% 7%;
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+}
+
+/* Fin estructura básica de la consola */
+/* Parte superior de la consola */
+.superior-superior,
+.superior-medio,
+.superior-abajo {
+    display: flex;
+    justify-content: center;
+}
+
+.superior-superior,
+.superior-abajo {
+    height: 12%;
+}
+
+.superior-medio {
+    height: 76%;
+}
+
+/* Fin parte superior de la consola */
+/* Protectores,logo y marcos superiores */
+.superior-superior-marco {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.protector {
+    background: linear-gradient(rgb(0, 0, 0), rgb(59, 58, 58));
+    height: 1.7vw;
+    width: 1.7vw;
+    border-radius: 100%;
+}
+
+.pro-medio {
+    background: linear-gradient(rgb(87, 86, 86), rgb(27, 27, 27));
+    height: 1.4vw;
+    width: 1.4vw;
+    border-radius: 100%;
+}
+
+.pantalla {
+    background-color: rgb(0, 0, 0);
+    border-radius: 3%;
+    border: 0.2rem solid rgb(53, 53, 53);
+    margin-left: 7%;
+    margin-right: 7%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.lcd {
+    background-color: rgb(150, 156, 121);
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 82%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0%;
+}
+
+.lcd video {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-gba {
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#logo {
+    width: 90%;
+    max-width: 180px;
+    height: auto;
+}
+
+.bajo-pantalla {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hasta aqui la parte superior completa */
+/* Zona del medio bisagras */
+.bisagra1,
+.bisagra2,
+.bisagra3,
+.bisagra4 {
+    background-color: black;
+    width: 3px;
+}
+
+.bisagra1 {
+    height: 97%;
+    margin-left: 8%;
+}
+
+.bisagra2 {
+    height: 100%;
+    margin-left: 41%;
+}
+
+.bisagra3 {
+    height: 100%;
+    margin-left: 33%;
+}
+
+.bisagra4 {
+    height: 97%;
+    margin-left: 6%;
+    margin-top: 1%
+}
+
+/* Fin zona bisagras */
+/* Parte abajo definida */
+.inferior-superior,
+.inferior-medio {
+    background-color: rgb(110, 111, 112);
+    display: flex;
+}
+
+.inferior-superior {
+    height: 16%;
+}
+
+.inferior-medio {
+    height: 35%;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.inferior-abajo,
+.abajo-abajo {
+    display: flex;
+    justify-content: center;
+}
+
+.inferior-abajo {
+    height: 30%;
+}
+
+.abajo-abajo {
+    height: 18%;
+}
+
+/* Fin parte abajo definida */
+/* Boton luz + led */
+.bt-luz,
+#brillo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-luz {
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
+    height: 1.4vw;
+    width: 1.4vw;
+    border-radius: 100%;
+    margin-left: 46%;
+    margin-top: 6%;
+}
+
+#brillo {
+    height: 1.4vw;
+}
+
+.led {
+    display: flex;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.led-arriba,
+.led-abajo {
+    position: fixed;
+    width: 0.8%;
+    height: 0.8%;
+    display: flex;
+    left: 60%;
+}
+
+.led-arriba {
+    background-color: rgb(167, 77, 77);
+    top: 56%
+}
+
+.led-abajo {
+    background-color: rgb(119, 131, 66);
+    top: 59%
+}
+
+/* Fin del boton luz + led */
+/* Boton a + b */
+.ab-boton {
+    height: 8vh;
+    width: 6.9vw;
+    background-color: #058f00;
+    background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    border-radius: 72px;
+    transform: rotate(-17deg);
+    border-left: 20px;
+    display: flex;
+    position: absolute;
+    right: 41vw;
+    bottom: 29vh;
+}
+
+#letraA,
+#letraB {
+    justify-content: top;
+    align-items: center;
+    line-height: 32px;
+    text-shadow: 0px -1px 1px #888;
+    font-family: Impact, sans-serif;
+    color: rgb(76, 76, 107);
+    font-size: 1.4rem;
+    font-stretch: condensed;
+}
+
+.boton-a,
+.boton-b {
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
+    rotate: 17deg;
+    height: 60%;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 100%;
+    position: absolute;
+    text-align: center;
+    border-bottom: 2px solid #09bc00;
+}
+
+.boton-a {
+    top: 8px;
+    right: 9px;
+}
+
+.boton-b {
+    top: 10px;
+    left: 8px;
+
+}
+
+.boton-a:hover,
+.boton-b:hover,
+.boton-start:hover,
+.boton-select:hover,
+.dpad-boton:hover,
+.bt-luz:hover {
+    cursor: pointer;
+    box-shadow: inset 0.15em 0 0.2em 0.1em rgb(4, 228, 79),
+        inset -0.15em 0 0.2em 0.1em rgb(27, 155, 2),
+        inset 0 0.15em 0.2em 0.1em black,
+        inset 0 -0.15em 0.2em 0.1em black;
+}
+
+
+
+
+.boton-a,
+.boton-b,
+.boton-start,
+.boton-select,
+.bt-luz {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+}
+
+.boton-a:hover,
+.boton-b:hover,
+.boton-start:hover,
+.boton-select:hover,
+.bt-luz:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-a:active,
+.boton-b:active,
+.boton-start:active,
+.boton-select:active,
+.bt-luz:active {
+    transform: translateY(4px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+/* Fin botones a+b */
+/* Botones Start + Select */
+.boton-start,
+.boton-select {
+    height: 3%;
+    width: 1.6%;
+    background: linear-gradient(to bottom, #a9ffae 0%, #058f00 100%);
+    border-radius: 100%;
+    position: fixed;
+    bottom: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.boton-start {
+    left: 50.6%;
+}
+
+.boton-select {
+    left: 46.75%;
+}
+
+#select,
+#start {
+    position: fixed;
+    opacity: 45%;
+    font-family: Impact, sans-serif;
+    color: rgb(40, 39, 39);
+    font-size: 0.9rem;
+    font-stretch: condensed;
+}
+
+#select {
+    left: 46.2%;
+    top: 84%;
+}
+
+#start {
+    left: 50.2%;
+    top: 84%;
+}
+
+.boton-start-sombra,
+.boton-select-sombra {
+    height: 5%;
+    width: 2.5%;
+    background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    border-radius: 100%;
+    position: fixed;
+    bottom: 8%;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.boton-start-sombra {
+    left: 50.1%;
+}
+
+.boton-select-sombra {
+    left: 46.3%;
+}
+
+.dpad-boton {
+    height: 14vh;
+    width: 7vw;
+    background: linear-gradient(to bottom, rgb(102, 101, 101) 100%, rgb(160, 11, 11)0%);
+    box-shadow: inset 0px 0px 6px 0px rgb(88, 86, 86);
+    border-radius: 100%;
+    border-left: 20px;
+    position: fixed;
+    left: 40.8%;
+    bottom: 25%;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dpad-derecha,
+.dpad-arriba {
+    background-color: rgb(42, 194, 62);
+    position: absolute;
+    border-radius: 10%;
+}
+
+.dpad-derecha {
+    width: 70%;
+    height: 25%;
+}
+
+.dpad-arriba {
+    width: 25%;
+    height: 70%;
+}
+
+/* Parte de los triangulos del D-Pad */
+
+/* Estilizando y posicionando los triángulos en cada esquina */
+.dpad-arriba::before,
+.dpad-derecha::before,
+.dpad-izquierda::before,
+.dpad-abajo::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* Estilo individual para cada triángulo */
+.dpad-arriba::before {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #1d9e26 transparent;
+    top: 4px;
+    left: calc(50% - 8px);
+}
+
+.dpad-derecha::before {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent #1d9e26 transparent;
+    rotate: -45deg;
+    top: calc(50% - 12px);
+    right: 10px;
+}
+
+.dpad-izquierda::before {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent transparent #1d9e26 transparent;
+    rotate: 45deg;
+    top: calc(50% - 12px);
+    left: 28px;
+}
+
+.dpad-abajo::before {
+    border-width: 8px 8px 0 8px;
+    border-color: #00990f transparent transparent transparent;
+    bottom: 20px;
+    left: calc(50% - 8px);
+}
+
+/* Dpad botones fin */
+/* Parte de los agujeros */
+.inferior-abajo-borde {
+    display: flex;
+    width: 10%;
+}
+
+.inferior-abajo-boquete {
+    display: flex;
+    width: 10%;
+    align-items: top;
+}
+
+.agujeros-vertical {
+    display: grid;
+    height: 65%;
+    width: 100%;
+    gap: 20%;
+}
+
+.agujeros-horizontal {
+    display: flex;
+    gap: 8%;
+    height: 50%;
+    width: 2000%;
+    left: 40%;
+    top: 50%;
+
+}
+
+.agujero {
+    background-color: black;
+    height: 0.6vh;
+    width: 0.6vh;
+    border-radius: 100%;
+}
+
+/* Fin parte de los agujeros */
+/* Fin del CSS */
