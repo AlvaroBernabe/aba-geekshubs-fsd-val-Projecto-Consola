@@ -10,13 +10,18 @@ Resumiendo el proceso bastante:
 <pre> Este es el modelo que he seguido            |        Foto finish!!!           |        Esta es la distribución de Divs inicial |  </pre>
 
 ![modelo a hacer](https://user-images.githubusercontent.com/122753448/214079312-6c615a70-1a4a-43e7-b142-4e19e50c39db.png)|
-!<img width="248" alt="image" src="https://github.com/AlvaroBernabe/aba-geekshubs-fsd-val-Projecto-Consola/assets/122753448/39f202fa-a215-4ae6-b494-baadf6ce734e">|
+!<img width="228" alt="image" src="https://github.com/AlvaroBernabe/aba-geekshubs-fsd-val-Projecto-Consola/assets/122753448/120fd036-ebe1-400c-a2f7-0fd0ea135de5">|
 |![Div](https://user-images.githubusercontent.com/122753448/214079203-80b6390f-5d46-4f90-b02e-bf28f4b1e475.png)| 
 
 <h3>-Features:</h3>
 - Cambiar la intensidad de la pantalla con el Botón Superior de la Luz.
 <br />
-- Pulsa el botón Start para intro.
+- Pulsa el botón Start para intro, y el Led de Encendido se ilumina.
+<br />
+- Los Botones tienen "pulsaciones".
+
+<h5>A Mejorar/Correguir</h5>
+- El D-Pad cuando se pulsa hacia abajo, si se pulsa en el icono se solapa con el superior.
 
 <h3>-Lenguajes utilizados:</h3>
 Ha sido desarrollado completamente con HTML5, CSS3 y un poco de JavaScript.
