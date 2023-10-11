@@ -7,10 +7,12 @@ https://alvarito101093.github.io/aba-geekshubs-fsd-val-Projecto-Consola/
 
 Resumiendo el proceso bastante:
 
-<pre> Este es el modelo que he seguido            |        Foto finish!!!           |        Esta es la distribución de Divs inicial |  </pre>
+<pre> Este es el modelo que he seguido            |        Foto finish!!!           |</pre>
 
 ![modelo a hacer](https://user-images.githubusercontent.com/122753448/214079312-6c615a70-1a4a-43e7-b142-4e19e50c39db.png)|
-!<img width="228" alt="image" src="https://github.com/AlvaroBernabe/aba-geekshubs-fsd-val-Projecto-Consola/assets/122753448/120fd036-ebe1-400c-a2f7-0fd0ea135de5">|
+!<img width="248" alt="image" src="https://github.com/AlvaroBernabe/aba-geekshubs-fsd-val-Projecto-Consola/assets/122753448/120fd036-ebe1-400c-a2f7-0fd0ea135de5">|
+
+<pre> Esta es la distribución de Divs inicial | </pre>
 |![Div](https://user-images.githubusercontent.com/122753448/214079203-80b6390f-5d46-4f90-b02e-bf28f4b1e475.png)| 
 
 <h3>-Features:</h3>
