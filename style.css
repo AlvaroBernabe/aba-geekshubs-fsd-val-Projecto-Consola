@@ -213,6 +213,10 @@ body {
     height: 1.4vw;
 }
 
+#brillo.iluminado {
+    filter: brightness(1.5) sepia(1) hue-rotate(50deg) !important;
+}
+
 .led {
     display: flex;
     margin-left: 50%;

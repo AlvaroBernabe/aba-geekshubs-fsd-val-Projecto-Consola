@@ -10,6 +10,7 @@ function iniciarIntro() {
 document.getElementById('brillo').addEventListener('click', cambiarBrillo);
 let nivelBrillo = 0;
 
+
 function cambiarBrillo() {
     const lcd = document.querySelector('.lcd');
     
@@ -33,3 +34,15 @@ function cambiarBrillo() {
             break;
     }
 }
+
+document.querySelector('.bt-luz').addEventListener('click', function() {
+    var brilloIcono = document.getElementById('brillo');
+    brilloIcono.classList.toggle('iluminado');
+    
+    if(brilloIcono.classList.contains('iluminado')) {
+        brilloIcono.src = './img/icono-brillo-amarillo.png';
+    } else {
+        brilloIcono.src = './img/icono-brillo.png';
+    }
+    console.log("Brillo icono on");
+});
